@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Search</title>
+    <style>
+      .button a {
+        text-align: center;
+        margin-top: 20px;
+        display: inline-block;
+        padding: 15px 20px;
+        font-weight: 700;
+        border: none;
+        border-radius: 3px;
+        background-color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body onload="loadData()">
+    <div class="wrapper" style="height: 100vh; overflow-y: scroll">
+      <div>
+        <table style="width: 100%" id="show">
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>Province</th>
+            <th>Postal Code</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Notes</th>
+          </tr>
+        </table>
+      </div>
+      <div class="button">
+        <a href="./index.html">Home</a>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

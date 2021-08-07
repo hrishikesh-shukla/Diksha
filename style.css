@@ -1,0 +1,182 @@
+/* setting font */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf)
+    format("truetype");
+}
+/* global styling */
+* {
+  box-sizing: border-box;
+  font-weight: 300;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+body ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-weight: 300;
+}
+body :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  opacity: 1;
+  font-weight: 300;
+}
+body ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  opacity: 1;
+  font-weight: 300;
+}
+body :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-weight: 300;
+}
+/* Links */
+a,
+a:active,
+a:focus {
+  color: #00b894;
+  text-decoration: none;
+}
+/* wrapping up */
+.wrapper {
+  background: #50a3a2;
+  background: linear-gradient(to bottom right, #016866 0%, #53e3a6 100%);
+  padding: 15px;
+  overflow: hidden;
+}
+/* container styling */
+.container {
+  padding: 20px 0;
+}
+form {
+  /* positioning */
+  position: relative;
+  z-index: 2;
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 600px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+  By default, textareas have a monospace font */
+  font: 1em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  transition-duration: 0.25s;
+  font-weight: 300;
+}
+form input:hover,
+form textarea:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form input:focus,
+form textarea:focus {
+  background-color: white;
+  width: 300px;
+  color: #53e3a6;
+}
+.button {
+  text-align: center;
+  display: block;
+}
+.button a {
+  text-align: center;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 15px 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  background-color: whitesmoke;
+}
+form button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: #00b894;
+  border-radius: 3px;
+  width: 200px;
+  margin-left: -60px;
+  cursor: pointer;
+  font-size: 18px;
+  transition-duration: 0.25s;
+}
+form button:hover {
+  background-color: #f5f7f9;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+table,
+th,
+td {
+  border: 1px solid whitesmoke;
+  border-collapse: collapse;
+  text-align: left;
+}
+th {
+  color: #2d3436;
+  font-weight: bold;
+}
+td,
+th {
+  padding: 2em;
+}
