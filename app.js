@@ -15,33 +15,30 @@ function add() {
   };
 
   //checking if error exists
-  let status;
+  let phnStatus = false;
+  let postalStatus = false;
 
   // check for phone
   var phn_pttrn_1 = /\([0-9]{3}\)[0-9]{3}-[0-9]{4}/gm;
   var phn_pttrn_2 = /[0-9]{3}-[0-9]{3}-[0-9]{4}/gm;
   const phone_no = data.phone + "";
   if (phn_pttrn_1.test(phone_no) || phn_pttrn_2.test(phone_no)) {
-    status = false;
+    phnStatus = false;
   } else {
     alert("Enter a valid phone number");
-    status = true;
+    phnStatus = true;
   }
-  // if (phone_no[0] < 6 || phone_no.length != 10) {
-  //   alert("Enter a valid phone number");
-  //   status = true;
-  // }
-  // check for postal
+
   var postal_pttrn = /([0-9][A-Za-z][0-9] [A-Za-z][0-9][A-Za-z])/gm;
   const postal_code = data.postal + "";
   if (postal_pttrn.test(postal_code)) {
-    status = false;
+    postalStatus = false;
   } else {
-    alert("Postal code should be of length 6");
-    status = true;
+    alert("Please enter correct postal code");
+    postalStatus = true;
   }
 
-  if (status == true) {
+  if (phnStatus == true || postalStatus == true) {
     console.log("Invalid entries!");
     alert("check entries before submitting");
   } else {
