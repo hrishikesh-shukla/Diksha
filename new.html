@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Registration Form</title>
   </head>
-  <body>
+  <body onload="loadData()">
     <div class="wrapper">
       <div class="container">
         <form onsubmit="add()">
@@ -78,6 +78,21 @@
             </ul>
           </fieldset>
         </form>
+      </div>
+      <div>
+        <table style="width: 100%" id="show">
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>Province</th>
+            <th>Postal Code</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Notes</th>
+          </tr>
+        </table>
       </div>
     </div>
     <script src="app.js"></script>
